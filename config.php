@@ -2,7 +2,7 @@
 // Database connection parameters
 $servername = "localhost";
 $username = "root";
-$password = "Xanax-gang-3001";
+$password = "Your_password";
 $database = "vindicta";
 
 // Create connection
