@@ -18,7 +18,7 @@ After installation, enable and start the services:
 sh
 sudo systemctl enable apache2 mariadb
 sudo systemctl start apache2 mariadb
-📌 Database Setup
+***📌 Database Setup***
 I created a MariaDB database called "vindicta", with a "users" table that includes the following fields:
 
 email (NOT NULL)
