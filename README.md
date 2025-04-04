@@ -43,4 +43,22 @@ CREATE TABLE users (
     nome_utente VARCHAR(100) NOT NULL,
     foto TEXT
 );
+
+🔑 Configuring the Database Connection
+In the config.php file, make sure to set the correct MariaDB password that you created during installation. Modify the $password variable accordingly:
+
+php
+Copia
+Modifica
+$host = "localhost";
+$user = "root";
+$password = "YOUR_DATABASE_PASSWORD";  // Replace with your MariaDB root password
+$dbname = "vindicta";
+
+$conn = new mysqli($host, $user, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
 This setup ensures that user authentication data is stored efficiently. 🚀
