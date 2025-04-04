@@ -7,7 +7,7 @@ I built a registration and login page using Apache2 and MariaDB. Users sign up w
 
 This project is an experiment using Apache2 as a web server and MariaDB as a database on a Linux operating system. The goal is to create a simple user management system with a registration and login feature.
 <br>
-***🛠 Installation Steps***
+***🛠 Installation Steps***<br>
 To set up the environment, install the necessary packages:
 
 sh
@@ -19,7 +19,7 @@ sh
 sudo systemctl enable apache2 mariadb
 sudo systemctl start apache2 mariadb
 <br>
-***📌 Database Setup***
+***📌 Database Setup*** <br>
 I created a MariaDB database called "vindicta", with a "users" table that includes the following fields:
 
 email (NOT NULL)
@@ -45,7 +45,7 @@ CREATE TABLE users (
     foto TEXT
 );
 <br>
-***🔑 Configuring the Database Connection***
+***🔑 Configuring the Database Connection***<br>
 In the config.php file, make sure to set the correct MariaDB password that you created during installation. Modify the $password variable accordingly:
 
 php
